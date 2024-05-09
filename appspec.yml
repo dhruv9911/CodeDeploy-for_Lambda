@@ -1,0 +1,9 @@
+version: 0.0
+Resources:
+  - myLambdaFunction:
+      Type: AWS::Lambda::Function
+      Properties:
+        Name: "CodeDeploy-Lambda"
+        Alias: "DevEnv"
+        CurrentVersion: "1"
+        TargetVersion: "$LATEST"
